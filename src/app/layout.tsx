@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Schibsted_Grotesk } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/NavBar";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,8 +31,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body
         className={`${grotesk.className} antialiased scroll-smooth  bg-black-500 `}
-      >
-        <NavBar/>
+      >   
         {children}
       </body>
     </html>
