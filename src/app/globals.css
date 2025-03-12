@@ -222,3 +222,33 @@
     @apply border-border outline-ring/50;}
   body {
     @apply bg-background text-foreground;}}
+
+
+/* Estilização global do Scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+  height: 8px; /* Altura da barra de rolagem (horizontal) */
+  margin: 0px 0px 0px 4px
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Cor do fundo da barra */
+  border-radius: 10px; /* Arredondamento das bordas */
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a5568; /* Cor do scroll */
+  border-radius: 10px; /* Arredondamento da alça */
+  border: 2px solid #2d3748; /* Pequena borda para destacar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #718096; /* Cor ao passar o mouse */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4a5568 #1e1e1e; /* (thumb) (track) */
+}

@@ -10,6 +10,9 @@ export default function Home() {
       <Introduction/>
       <TechnologySection/>
       <ProjectSection/>
+      <section className="w-full h-[20dvh]">
+
+      </section>
   </main>
   );
 }
