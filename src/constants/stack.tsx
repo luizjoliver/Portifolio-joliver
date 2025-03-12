@@ -3,7 +3,7 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { BsStripe } from "react-icons/bs";
 import { FaNodeJs, FaReact, FaGitAlt, FaDocker, FaAngular, FaAws } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiChakraui, SiMongodb, SiNestjs, SiPostgresql, SiPrisma, SiReacthookform, SiReactquery, SiShadcnui, SiSwagger, SiZod } from "react-icons/si";
+import { SiChakraui, SiFoodpanda, SiMongodb, SiNestjs, SiPostgresql, SiPrisma, SiPusher, SiReacthookform, SiReactquery, SiShadcnui, SiSwagger, SiZod } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 
 
@@ -103,5 +103,7 @@ export const techIconsMap = new Map([
   ['HookForm',<SiReacthookform className="size-7"/>],
   ['Tailwind',<RiTailwindCssFill className="size-7"/>],
   ['Nest',<SiNestjs className="size-7"/>],
-  ['Swagger',<SiSwagger className="size-7"/>]
+  ['Swagger',<SiSwagger className="size-7"/>],
+  ['Zustand',<SiFoodpanda className="size-7"/>],
+  ['Pusher',<SiPusher className="size-7"/>]
 ]);

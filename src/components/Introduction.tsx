@@ -25,13 +25,13 @@ export default function Introduction() {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
               Olá, Sou o Luiz Fellipe Joliver e esse é meu Portfólio.
             </h1>
-            <span className="italic text-lg sm:text-xl md:text-2xl">
-              Desenvolvedor FullStack
+            <span className="italic text-lg sm:text-xl md:text-2xl text-emerald-400">
+              Desenvolvedor 
             </span>
           </div>
 
           <p className="max-w-[90%] sm:max-w-[600px] text-sm sm:text-base md:text-xl font-base">
-            Desenvolvedor full-stack, com uma forte paixão por tecnologia e inovação.
+            Desenvolvedor , com uma forte paixão por tecnologia e inovação.
             Ao longo da minha formação, adquiri sólidos conhecimentos tanto no front-end quanto no back-end.
           </p>
 

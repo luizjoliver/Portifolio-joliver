@@ -1,3 +1,4 @@
+import AboutSection from "@/components/AboutSection";
 import Introduction from "@/components/Introduction";
 import NavBar from "@/components/NavBar";
 import ProjectSection from "@/components/ProjectSection";
@@ -10,9 +11,7 @@ export default function Home() {
       <Introduction/>
       <TechnologySection/>
       <ProjectSection/>
-      <section className="w-full h-[20dvh]">
-
-      </section>
+      <AboutSection/>
   </main>
   );
 }

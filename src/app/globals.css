@@ -224,31 +224,41 @@
     @apply bg-background text-foreground;}}
 
 
-/* Estilização global do Scrollbar */
+  /* WebKit (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
-  width: 8px; /* Largura da barra de rolagem */
-  height: 8px; /* Altura da barra de rolagem (horizontal) */
-  margin: 0px 0px 0px 4px
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e1e1e; /* Cor do fundo da barra */
-  border-radius: 10px; /* Arredondamento das bordas */
-  
+  background: #3C3C3F; /* Usando a cor dos componentes */
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4a5568; /* Cor do scroll */
-  border-radius: 10px; /* Arredondamento da alça */
-  border: 2px solid #2d3748; /* Pequena borda para destacar */
+  background: #555555; /* Cinza médio para contraste */
+  border-radius: 10px;
+  transition: background 0.3s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #718096; /* Cor ao passar o mouse */
+  background: #707070; /* Cinza mais claro no hover */
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
 }
 
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #4a5568 #1e1e1e; /* (thumb) (track) */
+  scrollbar-color: #555555 #3C3C3F; /* thumb track */
+}
+
+/* Opcional: ajuste para fundo mais escuro */
+@media (prefers-color-scheme: dark) {
+  * {
+    scrollbar-color: #555555 #3C3C3F;
+  }
 }

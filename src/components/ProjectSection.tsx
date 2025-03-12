@@ -54,15 +54,15 @@ export default async function ProjectSection() {
   console.log(projetos);
 
   return (
-    <section className="mt-20 md:mt-40 w-full min-h-screen flex items-center justify-center px-4 sm:px-6">
+    <section className="mt-40 w-full min-h-screen flex items-center justify-center px-4 sm:px-6">
       <div className="h-[90%] w-full lg:w-2/3 flex flex-col items-center justify-center gap-6 md:gap-10">
         <div className="w-full flex flex-col items-center gap-1 md:gap-2">
           <h3 className="text-2xl sm:text-3xl md:text-4xl text-white text-center">Meus Projetos</h3>
           <span className="text-lg sm:text-xl md:text-2xl italic text-white/40">My Projects</span>
         </div>
-        {/* h-[500px] sm:h-[600px] */}
-        <div className=' size-[90%] rounded-lg'>
-          <Carousel className="w-full h-full p-2 flex flex-col">
+        
+        <div className='h-full w-[300px] md:size-[90%] rounded-lg'>
+          <Carousel className="w-full h-full p-2 flex flex-col items-center justify-center">
             <CarouselContent className="w-full flex-1"> {/* Adicione esta parte */}
               {projetos.map((projectItem) => (
                 <ProjectItem ProjectItem={projectItem} key={projectItem.title} />
