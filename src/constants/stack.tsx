@@ -105,5 +105,9 @@ export const techIconsMap = new Map([
   ['Nest',<SiNestjs className="size-7"/>],
   ['Swagger',<SiSwagger className="size-7"/>],
   ['Zustand',<SiFoodpanda className="size-7"/>],
-  ['Pusher',<SiPusher className="size-7"/>]
+  ['Pusher',<SiPusher className="size-7"/>],
+  ['Angular',<FaAngular className="size-7"/>],
+  ['Typescript',<BiLogoTypescript  className="size-7"/>],
+  ['Docker',<FaDocker className="size-7"/>]
 ]);
+

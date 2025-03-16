@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import Footer from "@/components/Footer";
 import Introduction from "@/components/Introduction";
 import NavBar from "@/components/NavBar";
 import ProjectSection from "@/components/ProjectSection";
@@ -14,6 +15,7 @@ export default function Home() {
       <ProjectSection/>
       <AboutSection/>
       <ServiceSection/>
+      <Footer/>
   </main>
   );
 }
