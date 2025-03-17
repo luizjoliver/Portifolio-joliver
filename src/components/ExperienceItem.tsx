@@ -24,7 +24,7 @@ export default function ExperienceItem({ children, title, subTitle }: Experience
             </div>
 
             {openDropDown ? (
-                <div className='w-full h-auto flex gap-6'>
+                <div className='w-full h-auto flex flex-wrap md:flex-nowrap  gap-6'>
                     {children}
                 </div>
             ) : null}

@@ -15,7 +15,7 @@ export default function ExperienceDropDown() {
 
             <ExperienceItem title='Carreira' subTitle='Carer' >
 
-                <div className='flex-1 rounded-lg bg-slate-50/10 p-7'>
+                <div className='flex-1  rounded-lg  bg-slate-50/10 p-7'>
                     <div className='size-full flex flex-col gap-4 items-center justify-center'>
                         <div className='w-full flex flex-col '>
                             <h5 className='text-white font-bold text-lg'>Projeto Integrador</h5>
@@ -40,6 +40,7 @@ export default function ExperienceDropDown() {
                         <div className='w-full flex gap-2 items-center justify-start'>
                             <span className='text-white bg-black/50 font-semibold rounded-lg p-2'>Jan/22</span>
                             <span className='text-white bg-black/50 font-semibold rounded-lg p-2'>Fev/23</span>
+
                         </div>
                         <p className='text-gray-300 font-semibold text-base'>
                             Responsável pelo desenvolvimento e manutenção de páginas web com HTML, CSS, JavaScript e React, além de APIs com TypeScript e C#. Possui experiência com tecnologias Microsoft e plataforma Azure. Especializado em design de interfaces e UX/UI utilizando Figma, e em fornecer suporte eficiente para melhorar a experiência do usuário.
@@ -50,76 +51,77 @@ export default function ExperienceDropDown() {
             </ExperienceItem>
 
             <ExperienceItem title='Formações' subTitle='Qualifications' >
-
-                <div className='flex-1 rounded-lg bg-slate-50/10 p-7'>
-                    <div className='size-full flex flex-col gap-4 items-center justify-center'>
-                        <div className='w-full flex flex-col '>
-                            <h5 className='text-white font-bold text-lg '>ADS <span className='text-xs text-gray-300'>(CEUB)</span></h5>
-                            <span className='text-gray-300 font-bold'>Ensino Superior</span>
-                        </div>
-                        <div className='w-full flex gap-2 items-center justify-start'>
-                            <span className='text-white bg-black/50 font-semibold rounded-lg p-2'>Fev/22</span>
-                            <span className='text-white bg-black/50 font-semibold rounded-lg p-2'>Ago/25</span>
-                        </div>
-                    </div>
-                </div>
-                <div className='flex-1 rounded-lg bg-slate-50/10 p-7'>
-                    <div className='size-full flex flex-col gap-4 items-center justify-center'>
-                        <div className='w-full flex flex-col '>
-                            <h5 className='text-white font-bold text-lg'>Desenvolvedor FullStack JS <span className='text-xs text-gray-300'>(OneBitCode)</span></h5>
-                            <span className='text-gray-300 font-bold'>Curso profissionalizante</span>
-                        </div>
-                        <div className='w-full flex gap-2 items-center justify-start'>
-                            <span className='text-white bg-black/50 font-semibold rounded-lg p-2'>Dez/23</span>
-                            <span className='text-white bg-black/50 font-semibold rounded-lg p-2'>Fev/24</span>
+               
+                    <div className='flex-1 rounded-lg bg-slate-50/10 p-7'>
+                        <div className='size-full flex flex-col gap-4 items-center justify-between'>
+                            <div className='w-full flex flex-col '>
+                                <h5 className='text-white font-bold md:text-lg text-sm'>ADS <span className='text-xs text-gray-300'>(CEUB)</span></h5>
+                                <span className='text-gray-300 font-bold text-xs md:text-base'>Ensino Superior</span>
+                            </div>
+                            <div className='w-full flex gap-2 items-center justify-start'>
+                                <span className='text-white bg-black/50 font-semibold rounded-lg p-2 md:text-lg text-sm'>Fev/22</span>
+                                <span className='text-white bg-black/50 font-semibold rounded-lg p-2 md:text-lg text-sm'>Ago/25</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='flex-1 rounded-lg bg-slate-50/10 p-7'>
-                    <div className='size-full flex flex-col gap-4 items-center justify-center'>
-                        <div className='w-full flex flex-col '>
-                            <h5 className='text-white font-bold text-lg'>AWS Academy Graduate<span className='text-xs text-gray-300'> (AWS)</span></h5>
-                            <span className='text-gray-300 font-bold'>AWS Academy Cloud Foundations</span>
-                        </div>
-                        <div className='w-full flex gap-2 items-center justify-start'>
-                            <span className='text-white bg-black/50 font-semibold rounded-lg p-2'>Ago/24</span>
-                            <span className='text-white bg-black/50 font-semibold rounded-lg p-2'>Dez/24</span>
+                    <div className='flex-1 rounded-lg bg-slate-50/10 p-7'>
+                        <div className='size-full flex flex-col gap-4 items-center justify-center'>
+                            <div className='w-full flex flex-col '>
+                                <h5 className='text-white font-bold md:text-lg text-sm'>Desenvolvedor FullStack JS <span className='text-xs text-gray-300'>(OneBitCode)</span></h5>
+                                <span className='text-gray-300 font-bold text-xs md:text-base' >Curso profissionalizante</span>
+                            </div>
+                            <div className='w-full flex gap-2 items-center justify-start'>
+                                <span className='text-white bg-black/50 font-semibold rounded-lg p-2 md:text-lg text-sm' >Dez/23</span>
+                                <span className='text-white bg-black/50 font-semibold rounded-lg p-2 md:text-lg text-sm'>Fev/24</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div className='flex-1 rounded-lg bg-slate-50/10 p-7'>
+                        <div className='size-full flex flex-col gap-4 items-center justify-center'>
+                            <div className='w-full flex flex-col '>
+                                <h5 className='text-white font-bold md:text-lg text-sm'>AWS Academy Graduate<span className='text-xs text-gray-300'> (AWS)</span></h5>
+                                <span className='text-gray-300 font-bold text-xs md:text-base'>AWS Academy Cloud Foundations</span>
+                            </div>
+                            <div className='w-full flex gap-2 items-center justify-start'>
+                                <span className='text-white bg-black/50 font-semibold rounded-lg p-2 md:text-lg text-sm'>Ago/24</span>
+                                <span className='text-white bg-black/50 font-semibold rounded-lg p-2 md:text-lg text-sm'>Dez/24</span>
+                            </div>
+                        </div>
+                    </div>
+             
             </ExperienceItem>
 
             <ExperienceItem title='Cursos' subTitle='Courses' >
 
-                <div className='size-full  flex flex-col gap-4'>
-                <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold text-lg'>
+                <div className='size-full  flex flex-col gap-4 '>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
                         <p>Lógica de Algoritmos em C</p> <span>Ceub</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold text-lg'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
                         <p>JavaScript</p> <span>OneBitCode</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold text-lg'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
                         <p>TypeScript</p> <span>OneBitCode</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold text-lg'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
                         <p>Node</p> <span>OneBitCode</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold text-lg'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
                         <p>React</p> <span>OneBitCode</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold text-lg'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
                         <p>Modern React</p> <span>Udemy</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold text-lg'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
                         <p>Next Js</p> <span>OneBitCode</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold text-lg'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
                         <p>SQL e MySQL</p> <span>Udemy</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold text-lg'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
                         <p>Inglês Para Programadores</p> <span>Danki Code</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold text-lg'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
                         <p>AWS Academy</p> <span>AWS</span>
                     </div>
                 </div>
