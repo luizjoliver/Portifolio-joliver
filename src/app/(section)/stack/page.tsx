@@ -14,11 +14,23 @@ export default function StackPage() {
       </NavBar>
       <section className='flex-1 size-[100%] lg:size-[70%] mt-24  flex  flex-col gap-4  p-4  '>
 
-        <StackComponent stackItens={firstStack} title='Stack 1' initialDescription='Minha Stack Principal que atualmente possuo total dominio' />
+        <StackComponent
+          stackItens={firstStack}
+          title='Minha Stack Primária'
+          initialDescription='Minha stack principal, onde possuo domínio avançado e utilizo para a maioria dos meus projetos.'
+        />
 
-        <StackComponent stackItens={secondStack} title='Stack 2' initialDescription='Minha Stack Secundária que estou desenvolvendo' />
+        <StackComponent
+          stackItens={secondStack}
+          title='Minha Stack Secundária'
+          initialDescription='Minha stack secundária, na qual estou adquirindo mais experiência e aprimorando minhas habilidades.'
+        />
 
-        <StackComponent stackItens={toolStack} title='Outras Ferramentas' initialDescription='Ferramentas comuns' />
+        <StackComponent
+          stackItens={toolStack}
+          title='Ferramentas Essenciais'
+          initialDescription='Conjunto de ferramentas e tecnologias que utilizo para otimizar o desenvolvimento e fluxo de trabalho.'
+        />
 
       </section>
     </main>

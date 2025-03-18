@@ -127,69 +127,89 @@ export const firstStack = [
   {
     title: 'React',
     description: 'Biblioteca JavaScript para construção de interfaces de usuário reativas e componíveis.',
+    type:'front end'
   },
   {
     title: 'Next',
     description: 'Framework React que oferece renderização híbrida e geração de páginas estáticas e dinâmicas.',
+    type:'full stack'
+  },
+  {
+    title: "TypeScript",
+    description: "Superset do JavaScript que adiciona tipagem estática e recursos avançados para desenvolvimento seguro e escalável.",
+    type: "linguagem"
   },
   {
     title: 'Node',
     description: 'Ambiente de execução JavaScript no lado do servidor, baseado no motor V8 do Chrome.',
+    type:'back end'
   },
   {
     title: 'Nest',
     description: 'Framework Node.js progressivo para construção de aplicações escaláveis e bem estruturadas.',
+    type:'back end'
   },
   {
     title: 'PostgreSQL',
-    description: 'Banco de dados relacional de código aberto, poderoso e com suporte a SQL avançado.',
+    description: 'Banco de dados relacional de código aberto, poderoso e com suporte a SQL avançado.'
+    ,
+    type:'sgbd'
   },
   {
     title: 'Prisma',
     description: 'ORM para Node.js que facilita a interação com bancos de dados relacionais.',
+  
+    type:'orm'
   },
   {
     title: 'Tailwind',
     description: 'Framework CSS utilitário para construção rápida de interfaces responsivas e estilizadas.',
+    type:'front end'
   },
-  {
-    title: 'Zod',
-    description: 'Biblioteca TypeScript para validação e tipagem segura de esquemas de dados.',
-  },
+ 
 ];
 
 export const secondStack = [
   {
     title: 'Angular',
     description: 'Framework TypeScript para construção de aplicações web dinâmicas e escaláveis.',
+    type:'front end'
   },
   {
     title: 'Blazor',
     description: 'Framework da Microsoft para construção de SPAs utilizando C# e .NET no frontend.',
+    type:'front end'
   },
   {
     title: 'Csharp',
     description: 'Linguagem de programação moderna e orientada a objetos, desenvolvida pela Microsoft.',
+    type:'linguagem'
   },
   {
     title: 'DotNet',
     description: 'Plataforma de desenvolvimento da Microsoft para aplicações web, desktop e mobile.',
+    type:'full stack'
   },
   {
     title: 'MySQL',
     description: 'Banco de dados relacional open-source, popular por sua confiabilidade e desempenho.',
+    type:'sgbd'
   },
   {
     title: 'Entity',
     description: 'ORM para .NET que simplifica a interação com bancos de dados relacionais.',
+    
+    type:'orm'
   },
   {
     title: 'Sass',
     description: 'Pré-processador CSS que adiciona funcionalidades como variáveis e mixins.',
+    type:'front end'
   },
   {
     title: 'Docker',
     description: 'Plataforma para criação, envio e execução de aplicações em containers.',
+    type:'infraestrutura'
   },
 ];
 
@@ -197,17 +217,21 @@ export const toolStack = [
   {
     title: 'Git',
     description: 'Sistema de controle de versão distribuído, essencial para colaboração e rastreamento de código.',
+    type:'infraestrutura'
   },
   {
     title: 'Docker',
     description: 'Plataforma para empacotamento, distribuição e execução de aplicações em containers.',
+    type:'infraestrutura'
   },
   {
     title: 'AWS',
     description: 'Plataforma de computação em nuvem da Amazon, oferecendo serviços escaláveis e seguros.',
+    type:'nuvem'
   },
   {
     title:"MongoDB",
-    description:'O MangoDB é um Banco de dados do tipo NoSQL (Não relacional) '
+    description:'O MongoDB é um Banco de dados do tipo NoSQL (Não relacional) ',
+    type:'sgbd'
   }
 ];
