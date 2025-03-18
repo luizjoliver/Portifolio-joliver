@@ -136,7 +136,7 @@ export const firstStack = [
   },
   {
     title: "TypeScript",
-    description: "Superset do JavaScript que adiciona tipagem estática e recursos avançados para desenvolvimento seguro e escalável.",
+    description: "Superset do JavaScript que adiciona recursos adicionais para o desenvolvimento",
     type: "linguagem"
   },
   {

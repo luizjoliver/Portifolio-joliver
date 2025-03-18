@@ -28,7 +28,7 @@ export default function StackPage() {
 
         <StackComponent
           stackItens={toolStack}
-          title='Ferramentas Essenciais'
+          title='Ferramentas'
           initialDescription='Conjunto de ferramentas e tecnologias que utilizo para otimizar o desenvolvimento e fluxo de trabalho.'
         />
 

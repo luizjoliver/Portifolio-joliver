@@ -29,7 +29,7 @@ export default function StackComponent({ stackItens, title, initialDescription }
         <div className="flex-1 bg-slate-50/10 flex flex-col sm:flex-row rounded-lg min-h-[300px] md:min-h-[250px]">
             <div className="flex-1 flex flex-col p-6 space-y-4">
                 <div className="flex flex-col items-center text-center space-y-2">
-                    <h3 className="text-emerald-400 bg-clip-text text-xl md:text-2xl lg:text-3xl font-bold">
+                    <h3 className="text-emerald-400 bg-clip-text text-xl md:text-xl lg:text-2xl  xl:text-3xl font-bold">
                         {currentTitle}
                     </h3>
                    
@@ -44,7 +44,7 @@ export default function StackComponent({ stackItens, title, initialDescription }
 
                 {/* Apenas alterações necessárias aqui */}
                 <div className="flex-1 flex items-center justify-center transition-all duration-300">
-                    <p className="text-gray-300 text-xs md:text-base lg:text-lg leading-relaxed text-center w-full animate-fade-in">
+                    <p className="text-gray-300 text-xs md:text-sm xl:text-base leading-relaxed text-center w-full animate-fade-in">
                         {currentDescription}
                     </p>
                 </div>

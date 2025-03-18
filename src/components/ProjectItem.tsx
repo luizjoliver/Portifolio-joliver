@@ -96,7 +96,7 @@ export default function ProjectItem({ ProjectItem }: ProjectItemPropsType) {
             <p className="indent-4 line-clamp-5">{ProjectItem.about}</p>
           </div>
           <div className="mt-auto flex justify-end "  >
-            <Link className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-black rounded-full hover:bg-white/60 transition-colors" href={"/project"}>
+            <Link className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-black rounded-full hover:bg-white/60 transition-colors" href={"/projetos"}>
               Projeto
               <ExternalLink className="size-4" />
             </Link>

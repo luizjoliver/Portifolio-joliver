@@ -2,7 +2,7 @@ import ProjectItem, { ProjectItemType } from "./ProjectItem";
 import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from "./ui/carousel";
 
 
-const arrayProjetos = [
+export const arrayProjetos = [
   {
     id: 1,
     projetoUrl: 'https://api.github.com/repos/luizjoliver/Joao-e-Maria-Store/contents/project-info.json'
