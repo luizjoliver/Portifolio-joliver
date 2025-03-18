@@ -5,7 +5,7 @@ import { MdOutlineFileDownload } from 'react-icons/md';
 
 export default function Introduction() {
   return (
-    <section className="min-h-[calc(100dvh-7rem)] pt-24 flex items-center justify-center px-4 md:px-6 lg:px-8">
+    <section className="min-h-[calc(100dvh-7rem)] pt-24 flex items-center justify-center px-4 md:px-6 lg:px-8" id='inicio'>
       <article className="w-full max-w-[1400px] flex flex-col lg:flex-row items-center justify-between gap-20 md:gap-32 lg:gap-40">
         
         {/* Imagem */}

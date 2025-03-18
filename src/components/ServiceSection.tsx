@@ -3,11 +3,11 @@ import { FaLaptopCode, FaPalette, FaServer, FaTools } from 'react-icons/fa'
 import StackItem from './StackItem'
 
 
-const techStackFrontEnd = ['React', 'Next', 'Angular', 'Typescript']
-const techStackBackEnd = ['Node', 'Prisma', 'PostgreSQL', 'Docker']
+export const techStackFrontEnd = ['React', 'Next', 'Angular', 'Typescript']
+export const techStackBackEnd = ['Node', 'Prisma', 'PostgreSQL', 'Docker']
 export default function ServiceSection() {
     return (
-        <section className="min-h-[calc(100dvh-7rem)] mt-24 flex flex-col items-center justify-center pb-14 gap-14 px-4 sm:px-8">
+        <section className="min-h-[calc(100dvh-7rem)] mt-24 flex flex-col items-center justify-center pb-14 gap-14 px-4 sm:px-8" id='servicos'>
             <div className="w-full flex flex-col items-center gap-1 md:gap-2">
                 <h3 className="text-2xl sm:text-3xl md:text-4xl text-white text-center font-bold">Serviços</h3>
                 <span className="text-lg sm:text-xl md:text-2xl italic text-white/40 ">What I Offer</span>

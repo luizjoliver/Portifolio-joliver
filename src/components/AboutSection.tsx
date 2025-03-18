@@ -5,7 +5,7 @@ import ExperienceDropDown from './ExperienceDropDown'
 
 export default function AboutSection() {
     return (
-        <section className="min-h-[calc(100dvh-7rem)] pt-24 flex flex-col gap-14 items-center justify-center px-4 md:px-6 lg:px-8">
+        <section className="min-h-[calc(100dvh-7rem)] pt-24 flex flex-col gap-14 items-center justify-center px-4 md:px-6 lg:px-8"  id='sobre'>
            
            <div className="w-full flex flex-col items-center gap-1 md:gap-2">
           <h3 className="text-2xl sm:text-3xl md:text-4xl text-white text-center">Sobre mim</h3>

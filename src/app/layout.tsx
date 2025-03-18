@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Schibsted_Grotesk } from "next/font/google";
 import "./globals.css";
 
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -30,8 +31,8 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${grotesk.className} antialiased scroll-smooth  bg-black-500 `}
-      >   
+        className={`${grotesk.className} antialiased scroll-smooth  bg-black-500  `}
+      >
         {children}
       </body>
     </html>

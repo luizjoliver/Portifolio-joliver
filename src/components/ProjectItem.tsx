@@ -29,7 +29,7 @@ export default function ProjectItem({ ProjectItem }: ProjectItemPropsType) {
     <CarouselItem className="w-full h-full basis-full">
       <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-5 md:grid-rows-2 gap-4 w-full h-[600px] p-2">
         {/* Bloco de Descrição */}
-        <div className="bg-slate-50/10 hidden md:flex md:col-span-1 row-span-2 md:row-span-1 rounded-lg flex-col p-6 gap-4 h-full">
+        <div className="bg-slate-50/10 hidden md:flex md:col-span-1 row-span-2 md:row-span-1 rounded-lg flex-col p-6 gap-4 h-full ">
           <div className="flex items-center gap-3 mb-2">
             <FaRegFileCode className="size-6 text-emerald-400" />
             <h4 className="font-bold text-xl text-white">{ProjectItem.title}</h4>

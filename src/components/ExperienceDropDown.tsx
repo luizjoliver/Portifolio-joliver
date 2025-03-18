@@ -94,34 +94,34 @@ export default function ExperienceDropDown() {
             <ExperienceItem title='Cursos' subTitle='Courses' >
 
                 <div className='size-full  flex flex-col gap-4 '>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm hover:text-white'>
                         <p>Lógica de Algoritmos em C</p> <span>Ceub</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm hover:text-white'>
                         <p>JavaScript</p> <span>OneBitCode</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm hover:text-white'>
                         <p>TypeScript</p> <span>OneBitCode</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm hover:text-white'>
                         <p>Node</p> <span>OneBitCode</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm hover:text-white'>
                         <p>React</p> <span>OneBitCode</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm hover:text-white'>
                         <p>Modern React</p> <span>Udemy</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm hover:text-white'>
                         <p>Next Js</p> <span>OneBitCode</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm hover:text-white'>
                         <p>SQL e MySQL</p> <span>Udemy</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm hover:text-white'>
                         <p>Inglês Para Programadores</p> <span>Danki Code</span>
                     </div>
-                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm'>
+                    <div className='flex-1 flex items-center justify-between text-gray-300 font-semibold sm:text-lg text-sm hover:text-white'>
                         <p>AWS Academy</p> <span>AWS</span>
                     </div>
                 </div>

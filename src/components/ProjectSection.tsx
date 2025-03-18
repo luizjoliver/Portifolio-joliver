@@ -54,7 +54,7 @@ export default async function ProjectSection() {
   console.log(projetos);
 
   return (
-    <section className="mt-40 w-full min-h-screen flex items-center justify-center px-4 sm:px-6">
+    <section className="mt-40 w-full min-h-screen flex items-center justify-center px-4 sm:px-6" id="projetos">
       <div className="h-[90%] w-full lg:w-2/3 flex flex-col items-center justify-center gap-6 md:gap-10">
         <div className="w-full flex flex-col items-center gap-1 md:gap-2">
           <h3 className="text-2xl sm:text-3xl md:text-4xl text-white text-center">Meus Projetos</h3>
