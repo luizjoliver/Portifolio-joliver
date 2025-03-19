@@ -10,9 +10,9 @@ import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 type Params = { id: string }
 
 
-// export function generateStaticParams() {
-//     return [{ id: '1' }, { id: '2' }, { id: '3' }]
-//   }
+ export function generateStaticParams() {
+     return [{ id: '1' }, { id: '2' }, { id: '3' }]
+   }
 
 async function fetchProjectData(url: string) {
     try {
