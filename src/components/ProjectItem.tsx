@@ -30,7 +30,7 @@ export default function ProjectItem({ ProjectItem }: ProjectItemPropsType) {
   return (
     <CarouselItem className="w-full h-full basis-full">
       <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-5 md:grid-rows-2 gap-4 w-full h-[600px] p-2">
-        {/* Bloco de Descrição */}
+       
         <div className="bg-slate-50/10 hidden md:flex md:col-span-1 row-span-2 md:row-span-1 rounded-lg flex-col p-6 gap-4 h-full ">
           <div className="flex items-center gap-3 mb-2">
             <FaRegFileCode className="size-6 text-emerald-400" />
@@ -44,7 +44,7 @@ export default function ProjectItem({ ProjectItem }: ProjectItemPropsType) {
           </p>
         </div>
 
-        {/* Bloco de Tecnologias (Modificado) */}
+        
         <div className="bg-slate-50/10 hidden md:flex md:col-span-1 row-span-2 md:row-span-1 rounded-lg flex-col p-6 gap-4 h-full">
           <div className="flex flex-col items-start justify-start gap-1 mb-4 ">
             <Layers className="size-6 text-emerald-400" />
@@ -60,7 +60,7 @@ export default function ProjectItem({ ProjectItem }: ProjectItemPropsType) {
           </div>
         </div>
 
-        {/* Bloco de Imagem e Serviços */}
+        
         <div className="bg-slate-50/10 md:col-span-1 row-span-4 md:row-span-3 rounded-lg flex flex-col gap-4 h-full overflow-hidden">
           <div className="p-6 space-y-4">
             <div className="flex items-center  justify-between gap-3 ">
@@ -88,7 +88,7 @@ export default function ProjectItem({ ProjectItem }: ProjectItemPropsType) {
           </div>
         </div>
 
-        {/* Bloco Sobre o Projeto */}
+       
         <div className="bg-slate-50/10 hidden md:flex md:col-span-2 row-span-3 md:row-span-2 rounded-lg flex-col p-6 gap-4">
           <div className="flex items-center gap-3 mb-2">
             <GoQuestion className="size-6 text-emerald-400" />

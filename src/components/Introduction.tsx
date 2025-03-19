@@ -8,7 +8,7 @@ export default function Introduction() {
     <section className="min-h-[calc(100dvh-7rem)] pt-24 flex items-center justify-center px-4 md:px-6 lg:px-8" id='inicio'>
       <article className="w-full max-w-[1400px] flex flex-col lg:flex-row items-center justify-between gap-20 md:gap-32 lg:gap-40">
         
-        {/* Imagem */}
+       
         <figure className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[450px] flex items-center justify-center">
           <Image
             src={'/photo.jpg'}
@@ -19,7 +19,7 @@ export default function Introduction() {
           />
         </figure>
 
-        {/* Texto */}
+        
         <div className="w-full flex flex-col items-center lg:items-start justify-between h-full gap-6 sm:gap-12 text-center lg:text-left text-white">
           <div className='flex flex-col gap-2'>
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
@@ -36,7 +36,7 @@ export default function Introduction() {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-            <a className='bg-slate-50/10 rounded-full p-3 cursor-pointer hover:scale-110 flex gap-2 items-center justify-center' href={'https://drive.google.com/uc?export=download&id=1YFVjP4TqhCsZ-HeYAPTStBbEtaHC_5io'} >
+            <a className='bg-slate-50/10 rounded-full p-3 cursor-pointer hover:scale-110 flex gap-2 items-center justify-center' href={'https://drive.google.com/uc?export=download&id=1us2K42sedjpFgg5nT0MYKWW5XYzJiHM_'} >
             <span>Currículo</span>
               <MdOutlineFileDownload className="size-7 sm:size-8.5"/>  
             </a>

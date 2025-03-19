@@ -9,6 +9,11 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 
 type Params = { id: string }
 
+
+export function generateStaticParams() {
+    return [{ id: '1' }, { id: '2' }, { id: '3' }]
+  }
+
 async function fetchProjectData(url: string) {
     try {
         const token = process.env.GITHUB_TOKEN;
@@ -69,7 +74,7 @@ export default async function ProjectDetails({
 
                 <div className="bg-white/5 rounded-xl  ">
                     <div className="p-6 space-y-8">
-                        {/* Cabeçalho */}
+                        
                         <div className="flex justify-between items-start flex-col sm:flex-row gap-2">
                             <h1 className="text-3xl font-bold text-white">{projeto.title}</h1>
                             <span className="uppercase px-3 py-1 rounded-full md:text-sm text-xs bg-white/10 text-emerald-400">
@@ -77,13 +82,13 @@ export default async function ProjectDetails({
                             </span>
                         </div>
 
-                        {/* Seção Sobre */}
+                        
                         <div>
                             <h2 className="text-2xl font-semibold text-white mb-4">Sobre o Projeto</h2>
                             <p className="text-gray-300 leading-relaxed">{projeto.about}</p>
                         </div>
 
-                        {/* Serviços */}
+                       
                         <div>
                             <h2 className="text-2xl font-semibold text-white mb-4">Serviços</h2>
                             <ul className="list-disc list-inside text-gray-300 space-y-2">
@@ -93,7 +98,7 @@ export default async function ProjectDetails({
                             </ul>
                         </div>
 
-                        {/* Tech Stack */}
+                       
                         <div>
                             <h2 className="text-2xl font-semibold text-white mb-4">Tecnologias</h2>
                             <div className="flex flex-wrap gap-2">
@@ -103,7 +108,7 @@ export default async function ProjectDetails({
                             </div>
                         </div>
 
-                        {/* Galeria de Imagens do Projeto */}
+                     
                         {projeto.imgs.projectImgs && projeto.imgs.projectImgs.length > 0 && (
                             <div className="space-y-8">
                                 <h2 className="text-2xl font-semibold text-white mb-4">Imagens do Projeto</h2>
@@ -125,7 +130,7 @@ export default async function ProjectDetails({
                             </div>
                         )}
 
-                        {/* Documentação */}
+                      
                         {projeto.imgs.projectDoc && projeto.imgs.projectDoc.length > 0 && (
                             <div className="space-y-8">
                                 <h2 className="text-2xl font-semibold text-white mb-4">Documentação</h2>
@@ -146,7 +151,7 @@ export default async function ProjectDetails({
                             </div>
                         )}
 
-                        {/* Versões Desktop/Mobile */}
+                       
                         {(projeto.imgs.desktopVersion || projeto.imgs.mobileVersion) && (
                             <div className="space-y-8">
                                 {projeto.imgs.desktopVersion && projeto.imgs.desktopVersion.length > 0 && (
@@ -154,7 +159,7 @@ export default async function ProjectDetails({
                                         <h2 className="text-2xl font-semibold text-white mb-4">Versão Desktop</h2>
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                             {projeto.imgs.desktopVersion.map((img, i) => (
-                                                <div key={`desktop-${i}`} className="relative w-full h-[337.5px]"> {/* 16:9 ratio */}
+                                                <div key={`desktop-${i}`} className="relative w-full h-[337.5px]"> 
                                                     <Image
                                                         src={img}
                                                         alt={`Desktop ${i + 1}`}
@@ -175,7 +180,7 @@ export default async function ProjectDetails({
                                         <h2 className="text-2xl font-semibold text-white mb-4">Versão Mobile</h2>
                                         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                             {projeto.imgs.mobileVersion.map((img, i) => (
-                                                <div key={`mobile-${i}`} className="relative w-full h-[600px]"> {/* 9:16 ratio */}
+                                                <div key={`mobile-${i}`} className="relative w-full h-[600px]"> 
                                                     <Image
                                                         src={img}
                                                         alt={`Mobile ${i + 1}`}

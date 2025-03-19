@@ -27,7 +27,7 @@ export default function AboutSection() {
                         </p>
 
                         <p className="text-lg sm:text-xl text-gray-300 max-w-[90%] sm:max-w-[600px]">
-                            Hoje eu sou desenvolvedor com conhecimentos full stack, apesar de ter maior experiência com o front-end
+                            Hoje eu sou um desenvolvedor com conhecimentos full stack, apesar de ter maior experiência com o front-end
                         </p>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ export default function AboutSection() {
                             </li>
                         </ul>
                         <Link className='mt-6 bg-emerald-400 py-3 px-5 rounded-full w-full text-center flex items-center justify-center gap-2 text-black hover:scale-105 hover:opacity-70 transition-transform'
-                            href={''} 
+                            href={"https://api.whatsapp.com/send?phone=5561984694842&text=Ol%C3%A1%20%2C%20Luiz%20Fellipe%20Joliver!"}
                             target='_blank'>
                             Enviar WhatsApp <BsWhatsapp/>
                         </Link>

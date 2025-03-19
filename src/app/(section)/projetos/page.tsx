@@ -46,7 +46,7 @@ export default async function ProjectsPage() {
         <Link href={'/projetos'} className="cursor-pointer font-semibold text-xs sm:text-base hover:bg-black/40 px-2 py-1 rounded-full duration-300" aria-label="button-navbar">Projetos</Link>
       </NavBar>
 
-      {/* Seção de projetos */}
+      
       <section className='flex-1 w-full max-w-7xl mt-24 p-4'>
         <div className="w-full flex flex-col items-center gap-4 mb-8">
           <h3 className="text-2xl sm:text-3xl md:text-4xl text-white text-center">Projetos</h3>

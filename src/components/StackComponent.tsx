@@ -42,7 +42,7 @@ export default function StackComponent({ stackItens, title, initialDescription }
                     </div>
                 </div>
 
-                {/* Apenas alterações necessárias aqui */}
+                
                 <div className="flex-1 flex items-center justify-center transition-all duration-300">
                     <p className="text-gray-300 text-xs md:text-sm xl:text-base leading-relaxed text-center w-full animate-fade-in">
                         {currentDescription}
@@ -66,7 +66,7 @@ export default function StackComponent({ stackItens, title, initialDescription }
                             <div className={`${tech.title === techSelected ? 'text-emerald-400' : 'text-white'} group-hover:text-emerald-400 group-hover:scale-125 duration-300`}>
                                 {Icon}
                             </div>
-                            {/* Ajuste mínimo de tamanho de texto */}
+                           
                             <span className="text-[10px] xs:text-xs md:text-base">{tech.title}</span>
                         </li>
                     );

@@ -63,7 +63,7 @@ export default async function ProjectSection() {
         
         <div className='h-full w-[300px] md:size-[90%] rounded-lg'>
           <Carousel className="w-full h-full p-2 flex flex-col items-center justify-center">
-            <CarouselContent className="w-full flex-1"> {/* Adicione esta parte */}
+            <CarouselContent className="w-full flex-1"> 
               {projetos.map((projectItem) => (
                 <ProjectItem ProjectItem={projectItem} key={projectItem.title} />
               ))}
