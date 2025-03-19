@@ -68,7 +68,7 @@ export default function ProjectItem({ ProjectItem }: ProjectItemPropsType) {
                 <Package className="size-6 text-emerald-400" />
                 <h4 className="font-bold text-xl text-white">Serviços</h4>
               </div>
-              <Link className="flex items-center  text-wrap justify-center gap-2  md:hidden bg-white text-black rounded-full hover:bg-white/60 transition-colors py-0.5 px-2" href={"/project"}>
+              <Link className="flex items-center  text-wrap justify-center gap-2  md:hidden bg-white text-black rounded-full hover:bg-white/60 transition-colors py-0.5 px-2" href={"/projetos"}>
                 <span className="text-xs">Ver</span>
                 <ExternalLink className="size-4" />
               </Link>
