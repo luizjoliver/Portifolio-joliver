@@ -9,10 +9,9 @@ import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
 type Params = { id: string }
 
-
- export function generateStaticParams() {
-     return [{ id: '1' }, { id: '2' }, { id: '3' }]
-   }
+export function generateStaticParams() {
+    return [{ id: '1' }, { id: '2' }, { id: '3' }]
+}
 
 async function fetchProjectData(url: string) {
     try {
@@ -135,7 +134,7 @@ export default async function ProjectDetails({
                         {projeto.imgs.projectImgs && projeto.imgs.projectImgs.length > 0 && (
                             <div className="space-y-8">
                                 <h2 className="text-2xl font-semibold text-white mb-4">Imagens do Projeto</h2>
-                                <div className="grid grid-cols-1 gap-4">
+                                <div className="grid grid-cols-1 gap-1 md:gap-4"> 
                                     {projeto.imgs.projectImgs.map((img, i) => (
                                         <div key={`project-img-${i}`} className="relative w-full h-[400px]">
                                             <Image
@@ -164,7 +163,7 @@ export default async function ProjectDetails({
                                                 src={doc}
                                                 alt={`Documentação ${i + 1}`}
                                                 fill
-                                                className="rounded-lg  object-contain"
+                                                className="rounded-lg object-contain"
                                                 quality={100}
                                                 sizes="(max-width: 768px) 100vw, 800px"
                                             />
@@ -175,12 +174,12 @@ export default async function ProjectDetails({
                         )}
 
 
-                        {(projeto.imgs.desktopVersion || projeto.imgs.mobileVersion) && (
+                        {(projeto.imgs.desktopVersion && projeto.imgs.desktopVersion.length > 0 ||  projeto.imgs.mobileVersion && projeto.imgs.mobileVersion.length > 0) && (
                             <div className="space-y-8">
                                 {projeto.imgs.desktopVersion && projeto.imgs.desktopVersion.length > 0 && (
                                     <div>
                                         <h2 className="text-2xl font-semibold text-white mb-4">Versão Desktop</h2>
-                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-4">
                                             {projeto.imgs.desktopVersion.map((img, i) => (
                                                 <div key={`desktop-${i}`} className="relative w-full h-[337.5px]">
                                                     <Image
@@ -198,11 +197,11 @@ export default async function ProjectDetails({
                                     </div>
                                 )}
 
-                                {projeto.imgs.mobileVersion && projeto.imgs.mobileVersion.length > 0 && (
+                                {projeto.imgs.mobileVersion?.length && projeto.imgs.mobileVersion?.length > 0 && (
                                     <div>
                                         <h2 className="text-2xl font-semibold text-white mb-4">Versão Mobile</h2>
                                         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                                            {projeto.imgs.mobileVersion.map((img, i) => (
+                                            {projeto.imgs.mobileVersion && projeto.imgs.mobileVersion.map((img, i) => (
                                                 <div key={`mobile-${i}`} className="relative w-full h-[600px]">
                                                     <Image
                                                         src={img}
