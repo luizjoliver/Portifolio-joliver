@@ -5,14 +5,14 @@ import StackItem from '@/components/StackItem';
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
-import { IoIosArrowRoundBack } from "react-icons/io";
+import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
 type Params = { id: string }
 
 
-export function generateStaticParams() {
-    return [{ id: '1' }, { id: '2' }, { id: '3' }]
-  }
+// export function generateStaticParams() {
+//     return [{ id: '1' }, { id: '2' }, { id: '3' }]
+//   }
 
 async function fetchProjectData(url: string) {
     try {
@@ -50,7 +50,7 @@ export default async function ProjectDetails({
 
     if (!projetoConfig) notFound()
 
-    const projeto: ProjectItemType = await fetchProjectData(projetoConfig.projetoUrl)
+    const projeto: ProjectItemType = await fetchProjectData(projetoConfig.githubUrl)
     if (!projeto) notFound()
 
     return (
@@ -69,26 +69,39 @@ export default async function ProjectDetails({
 
             <section className='flex-1 w-full max-w-7xl mt-24 p-4 space-y-8'>
                 <Link href="/projetos" className="text-emerald-400 hover:opacity-35 text-sm flex items-center justify-start">
-                    <IoIosArrowRoundBack className='size-7'/> Voltar
+                    <IoIosArrowRoundBack className='size-7' /> Voltar
                 </Link>
 
                 <div className="bg-white/5 rounded-xl  ">
                     <div className="p-6 space-y-8">
-                        
-                        <div className="flex justify-between items-start flex-col sm:flex-row gap-2">
-                            <h1 className="text-3xl font-bold text-white">{projeto.title}</h1>
-                            <span className="uppercase px-3 py-1 rounded-full md:text-sm text-xs bg-white/10 text-emerald-400">
-                                {projeto.type}
-                            </span>
+
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-6">
+                            <div className="space-y-2">
+                                <h1 className="text-3xl font-bold text-white">{projeto.title}</h1>
+                                <span className="uppercase px-3 py-1 rounded-full md:text-sm text-xs bg-white/10 text-emerald-400 inline-block">
+                                    {projeto.type}
+                                </span>
+                            </div>
+
+                            <Link
+                                href={projetoConfig.projetoUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-emerald-400/20 px-4 py-2 rounded-full hover:bg-emerald-400/30 transition-colors text-emerald-400 items-center gap-1 w-fit
+                                hidden sm:flex"
+                            >
+                                <span>Ver Projeto</span>
+                                <IoIosArrowRoundForward className="size-5" />
+                            </Link>
                         </div>
 
-                        
-                        <div>
+
+                        <div >
                             <h2 className="text-2xl font-semibold text-white mb-4">Sobre o Projeto</h2>
                             <p className="text-gray-300 leading-relaxed">{projeto.about}</p>
                         </div>
 
-                       
+
                         <div>
                             <h2 className="text-2xl font-semibold text-white mb-4">Serviços</h2>
                             <ul className="list-disc list-inside text-gray-300 space-y-2">
@@ -98,17 +111,27 @@ export default async function ProjectDetails({
                             </ul>
                         </div>
 
-                       
-                        <div>
+
+                        <div className='flex flex-col gap-4'>
                             <h2 className="text-2xl font-semibold text-white mb-4">Tecnologias</h2>
                             <div className="flex flex-wrap gap-2">
                                 {projeto.techStack.map((tech, i) => (
                                     <StackItem key={i} tech={tech} />
                                 ))}
                             </div>
+                            <Link
+                                    href={projetoConfig.projetoUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-emerald-400/20 px-4 py-2 rounded-full hover:bg-emerald-400/30 transition-colors text-emerald-400 items-center gap-1 w-fit
+                                flex sm:hidden"
+                                >
+                                    <span>Ver Projeto</span>
+                                    <IoIosArrowRoundForward className="size-5" />
+                                </Link>
                         </div>
 
-                     
+
                         {projeto.imgs.projectImgs && projeto.imgs.projectImgs.length > 0 && (
                             <div className="space-y-8">
                                 <h2 className="text-2xl font-semibold text-white mb-4">Imagens do Projeto</h2>
@@ -130,7 +153,7 @@ export default async function ProjectDetails({
                             </div>
                         )}
 
-                      
+
                         {projeto.imgs.projectDoc && projeto.imgs.projectDoc.length > 0 && (
                             <div className="space-y-8">
                                 <h2 className="text-2xl font-semibold text-white mb-4">Documentação</h2>
@@ -151,7 +174,7 @@ export default async function ProjectDetails({
                             </div>
                         )}
 
-                       
+
                         {(projeto.imgs.desktopVersion || projeto.imgs.mobileVersion) && (
                             <div className="space-y-8">
                                 {projeto.imgs.desktopVersion && projeto.imgs.desktopVersion.length > 0 && (
@@ -159,7 +182,7 @@ export default async function ProjectDetails({
                                         <h2 className="text-2xl font-semibold text-white mb-4">Versão Desktop</h2>
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                             {projeto.imgs.desktopVersion.map((img, i) => (
-                                                <div key={`desktop-${i}`} className="relative w-full h-[337.5px]"> 
+                                                <div key={`desktop-${i}`} className="relative w-full h-[337.5px]">
                                                     <Image
                                                         src={img}
                                                         alt={`Desktop ${i + 1}`}
@@ -180,7 +203,7 @@ export default async function ProjectDetails({
                                         <h2 className="text-2xl font-semibold text-white mb-4">Versão Mobile</h2>
                                         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                             {projeto.imgs.mobileVersion.map((img, i) => (
-                                                <div key={`mobile-${i}`} className="relative w-full h-[600px]"> 
+                                                <div key={`mobile-${i}`} className="relative w-full h-[600px]">
                                                     <Image
                                                         src={img}
                                                         alt={`Mobile ${i + 1}`}

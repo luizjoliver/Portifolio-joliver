@@ -37,7 +37,7 @@ export default async function ProjectsPage() {
     }
   }
 
-  const projetos: ProjectItemType[] = await Promise.all(arrayProjetos.map((projeto) => fetchProjectData(projeto.projetoUrl)));
+  const projetos: ProjectItemType[] = await Promise.all(arrayProjetos.map((projeto) => fetchProjectData(projeto.githubUrl)));
   return (
     <main className='min-h-[100dvh] flex flex-col items-center gap-4'>
       <NavBar>
