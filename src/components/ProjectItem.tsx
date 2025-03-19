@@ -11,11 +11,13 @@ export type ProjectItemType = {
   about: string;
   techStack: string[]
   services: string;
-  type?: string
-  imgs?: {
+  type: string
+  imgs: {
     banner: string,
-    desktopVersion: string[];
-    mobileVersion: string[];
+    desktopVersion?: string[];
+    mobileVersion?: string[];
+    projectImgs?:string[];
+    projectDoc?:string[]
   }
 }
 

@@ -55,7 +55,7 @@ export default async function ProjectsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projetos.map((projeto, index) => (
-            <article
+            <Link href={`/projetos/${index + 1}`}
               key={index}
               className="bg-white/5 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl hover:border-emerald-400 border border-transparent cursor-pointer"
             >
@@ -85,7 +85,7 @@ export default async function ProjectsPage() {
                   ))}
                 </div>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </section>
