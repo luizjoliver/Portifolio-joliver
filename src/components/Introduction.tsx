@@ -36,7 +36,7 @@ export default function Introduction() {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-            <a className='bg-slate-50/10 rounded-full p-3 cursor-pointer hover:scale-110 flex gap-2 items-center justify-center' href={'https://drive.google.com/uc?export=download&id=1us2K42sedjpFgg5nT0MYKWW5XYzJiHM_'} >
+            <a className='bg-slate-50/10 rounded-full p-3 cursor-pointer hover:scale-110 flex gap-2 items-center justify-center' href={'https://drive.google.com/uc?export=download&id=1rSi1ZxEvm2d_W5FueUBFVpAdQK7Nugq_'} >
             <span>Currículo</span>
               <MdOutlineFileDownload className="size-7 sm:size-8.5"/>  
             </a>
