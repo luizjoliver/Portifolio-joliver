@@ -1,11 +1,11 @@
 import NavBar from '@/components/NavBar'
 import { ProjectItemType } from '@/components/ProjectItem';
-import { arrayProjetos } from '@/components/ProjectSection'
 import StackItem from '@/components/StackItem';
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
+import { arrayProjetos } from '@/constants/stack';
 
 type Params = { id: string }
 

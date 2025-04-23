@@ -1,7 +1,8 @@
 import NavBar from '@/components/NavBar'
 import { ProjectItemType } from '@/components/ProjectItem';
-import { arrayProjetos } from '@/components/ProjectSection';
 import StackItem from '@/components/StackItem';
+import { arrayProjetos } from '@/constants/stack';
+import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
 
@@ -59,10 +60,12 @@ export default async function ProjectsPage() {
               key={index}
               className="bg-white/5 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl hover:border-emerald-400 border border-transparent cursor-pointer"
             >
-              <img
+              <Image
                 src={projeto?.imgs?.banner}
                 alt={projeto.title}
                 className="w-full h-48 object-cover"
+                width={540}
+                height={600}
               />
 
               <div className="p-4 flex flex-col gap-3">

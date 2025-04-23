@@ -3,8 +3,8 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { BsStripe } from "react-icons/bs";
 import { FaNodeJs, FaReact, FaGitAlt, FaDocker, FaAngular, FaAws, FaSass } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiChakraui, SiDotnet, SiFoodpanda, SiMongodb, SiNestjs, SiPostgresql, SiPrisma, SiPusher, SiReacthookform, SiReactquery, SiShadcnui, SiSwagger, SiZod } from "react-icons/si";
-import { TbBrandCSharp } from "react-icons/tb";
+import { SiChakraui, SiDotnet, SiFoodpanda, SiMongodb, SiNestjs, SiPostgresql, SiPrisma, SiPusher, SiReacthookform, SiReactquery, SiShadcnui, SiStyledcomponents, SiSwagger, SiZod } from "react-icons/si";
+import { TbBrandCSharp, TbBrandVite } from "react-icons/tb";
 import { GrMysql } from "react-icons/gr";
 import { DiDotnet } from "react-icons/di";
 import { SiBlazor } from "react-icons/si";
@@ -118,7 +118,9 @@ export const techIconsMap = new Map([
   ['Entity',<DiDotnet className="size-7"/>],
   ['AWS',<FaAws className="size-7" />],
   ['Blazor',<SiBlazor className="size-7"/>],
-  ['MongoDB',<SiMongodb className="size-7"/>]
+  ['MongoDB',<SiMongodb className="size-7"/>],
+  ['Vite',<TbBrandVite className="size-7"/>],
+  ['Styled-Components',<SiStyledcomponents className="size-14"/>]
 ]);
 
 
@@ -234,4 +236,27 @@ export const toolStack = [
     description:'O MongoDB é um Banco de dados do tipo NoSQL (Não relacional) ',
     type:'sgbd'
   }
+];
+
+export const arrayProjetos = [
+  {
+    id: 1,
+    githubUrl: 'https://api.github.com/repos/luizjoliver/Joao-e-Maria-Store/contents/project-info.json',
+    projetoUrl:'https://joao-e-maria-store.vercel.app/'
+  },
+  {
+    id: 2,
+    githubUrl: 'https://api.github.com/repos/luizjoliverceub/Petzone/contents/project-info.json?ref=alter-pid-4',
+    projetoUrl:'https://github.com/luizjoliverceub/Petzone'
+  },
+  {
+    id: 3,
+    githubUrl: 'https://api.github.com/repos/luizjoliver/my-podcast-api/contents/project-info.json',
+    projetoUrl:'https://github.com/luizjoliver/my-podcast-api'
+  },
+  {
+    id: 4,
+    githubUrl: 'https://api.github.com/repos/luizjoliver/Carlos-Tenis/contents/project-info.json',
+    projetoUrl:'https://carlos-tenis.vercel.app/'
+  },
 ];

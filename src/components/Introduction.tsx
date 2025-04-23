@@ -16,6 +16,7 @@ export default function Introduction() {
             width={450}
             height={450}
             className="rounded-3xl w-full h-auto"
+            quality={60}
           />
         </figure>
 
