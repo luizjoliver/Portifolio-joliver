@@ -9,8 +9,10 @@ import { arrayProjetos } from '@/constants/stack';
 
 type Params = { id: string }
 
+const projectIds = arrayProjetos.map((project) => ({id: String(project.id)}))
+
 export function generateStaticParams() {
-    return [{ id: '1' }, { id: '2' }, { id: '3' }]
+    return projectIds
 }
 
 async function fetchProjectData(url: string) {
