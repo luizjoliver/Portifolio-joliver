@@ -280,6 +280,6 @@ export const allProjects = [
   {
     id: 5,
     githubUrl: 'https://api.github.com/repos/luizjoliver/Angular-login-app/contents/project-info.json',
-    projetoUrl:'https://carlos-tenis.vercel.app/'
+    projetoUrl:'https://angular-login-app-one.vercel.app/'
   }
 ];
