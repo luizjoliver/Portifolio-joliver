@@ -1,7 +1,7 @@
 import NavBar from '@/components/NavBar'
 import { ProjectItemType } from '@/components/ProjectItem';
 import StackItem from '@/components/StackItem';
-import { arrayProjetos } from '@/constants/stack';
+import { allProjects } from '@/constants/stack';
 import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
@@ -38,7 +38,7 @@ export default async function ProjectsPage() {
     }
   }
 
-  const projetos: ProjectItemType[] = await Promise.all(arrayProjetos.map((projeto) => fetchProjectData(projeto.githubUrl)));
+  const projetos: ProjectItemType[] = await Promise.all(allProjects.map((projeto) => fetchProjectData(projeto.githubUrl)));
   return (
     <main className='min-h-[100dvh] flex flex-col items-center gap-4'>
       <NavBar>

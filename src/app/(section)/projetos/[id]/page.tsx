@@ -5,11 +5,11 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
-import { arrayProjetos } from '@/constants/stack';
+import { allProjects, arrayProjetos } from '@/constants/stack';
 
 type Params = { id: string }
 
-const projectIds = arrayProjetos.map((project) => ({id: String(project.id)}))
+const projectIds = allProjects.map((project) => ({id: String(project.id)}))
 
 export function generateStaticParams() {
     return projectIds
@@ -47,7 +47,7 @@ export default async function ProjectDetails({
 }) {
     const Params = await params
     const projetoId = parseInt(Params.id)
-    const projetoConfig = arrayProjetos.find(p => p.id === projetoId)
+    const projetoConfig = allProjects.find(p => p.id === projetoId)
 
     if (!projetoConfig) notFound()
 

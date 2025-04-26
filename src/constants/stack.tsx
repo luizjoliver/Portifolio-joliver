@@ -253,10 +253,33 @@ export const arrayProjetos = [
     id: 3,
     githubUrl: 'https://api.github.com/repos/luizjoliver/my-podcast-api/contents/project-info.json',
     projetoUrl:'https://github.com/luizjoliver/my-podcast-api'
+  }
+];
+
+export const allProjects = [
+  {
+    id: 1,
+    githubUrl: 'https://api.github.com/repos/luizjoliver/Joao-e-Maria-Store/contents/project-info.json',
+    projetoUrl:'https://joao-e-maria-store.vercel.app/'
+  },
+  {
+    id: 2,
+    githubUrl: 'https://api.github.com/repos/luizjoliverceub/Petzone/contents/project-info.json?ref=alter-pid-4',
+    projetoUrl:'https://github.com/luizjoliverceub/Petzone'
+  },
+  {
+    id: 3,
+    githubUrl: 'https://api.github.com/repos/luizjoliver/my-podcast-api/contents/project-info.json',
+    projetoUrl:'https://github.com/luizjoliver/my-podcast-api'
   },
   {
     id: 4,
     githubUrl: 'https://api.github.com/repos/luizjoliver/Carlos-Tenis/contents/project-info.json',
     projetoUrl:'https://carlos-tenis.vercel.app/'
   },
+  {
+    id: 5,
+    githubUrl: 'https://api.github.com/repos/luizjoliver/Angular-login-app/contents/project-info.json',
+    projetoUrl:'https://carlos-tenis.vercel.app/'
+  }
 ];
